@@ -1,0 +1,14 @@
+{
+  // DSpace default: "All of DSpace"
+  "menu.section.browse_global": "Browse Mountain Scholar",
+
+  // DSpace default: "DSpace Angular :: "
+  "repository.title.prefix": "Mountain Scholar :: ",
+
+  "dso-selector.set-scope.community.button": "Search all of Mountain Scholar",
+  "home.top-level-communities.head": "Communities in Mountain Scholar",
+  "login.form.header": "Please log in to Mountain Scholar",
+  "logout.form.header": "Log out from Mountain Scholar",
+  "search.form.scope.all": "All",
+  "submission.sections.upload.info": "Here you will find all the files currently in the item. You can update the file metadata and access conditions or <strong>upload additional files by dragging & dropping them anywhere in the page</strong>"
+}
