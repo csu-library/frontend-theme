@@ -10,6 +10,9 @@ import { ResultsBackButtonModule } from '../../app/shared/results-back-button/re
 import { DsoPageModule } from '../../app/shared/dso-page/dso-page.module';
 import { HeaderComponent } from './app/header/header.component';
 import { HomeNewsComponent } from './app/home-page/home-news/home-news.component';
+import { HomePageComponent } from './app/home-page/home-page.component';
+import { NavbarComponent } from '../../app/navbar/navbar.component';
+import { HeaderNavbarWrapperComponent } from '../../app/header-nav-wrapper/header-navbar-wrapper.component';
 
 /**
  * Add components that use a custom decorator to ENTRY_COMPONENTS as well as DECLARATIONS.
@@ -21,7 +24,10 @@ const ENTRY_COMPONENTS = [
 const DECLARATIONS = [
   ...ENTRY_COMPONENTS,
   HomeNewsComponent,
+  HomePageComponent,
   HeaderComponent,
+  HeaderNavebarWrapperComponent,
+  NavbarComponent,
 ];
 
 @NgModule({
