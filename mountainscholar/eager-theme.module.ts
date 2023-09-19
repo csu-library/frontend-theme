@@ -10,24 +10,26 @@ import { ResultsBackButtonModule } from '../../app/shared/results-back-button/re
 import { DsoPageModule } from '../../app/shared/dso-page/dso-page.module';
 import { HeaderComponent } from './app/header/header.component';
 import { HomeNewsComponent } from './app/home-page/home-news/home-news.component';
-import { HomePageComponent } from './app/home-page/home-page.component';
-import { NavbarComponent } from '../../app/navbar/navbar.component';
-import { HeaderNavbarWrapperComponent } from '../../app/header-nav-wrapper/header-navbar-wrapper.component';
+import { LoginPageComponent } from './app/login-page/login-page.component';
+import { AdminSidebarComponent } from './app/admin/admin-sidebar/admin-sidebar.component';
+import { UntypedItemComponent } from './app/item-page/simple/item-types/untyped-item/untyped-item.component';
+import { FileSectionComponent } from './app/item-page/simple/field-components/file-section/file-section.component';
 
 /**
  * Add components that use a custom decorator to ENTRY_COMPONENTS as well as DECLARATIONS.
  * This will ensure that decorator gets picked up when the app loads
  */
 const ENTRY_COMPONENTS = [
+  UntypedItemComponent,
+  FileSectionComponent,
 ];
 
 const DECLARATIONS = [
   ...ENTRY_COMPONENTS,
   HomeNewsComponent,
-  HomePageComponent,
   HeaderComponent,
-  HeaderNavebarWrapperComponent,
-  NavbarComponent,
+  LoginPageComponent,
+  AdminSidebarComponent,
 ];
 
 @NgModule({
