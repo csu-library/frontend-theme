@@ -1,20 +1,15 @@
 {
-  // DSpace default: "All of DSpace"
-  "menu.section.browse_global": "Browse Mountain Scholar",
-
-  // DSpace default: "DSpace Angular :: "
-  "repository.title.prefix": "Mountain Scholar :: ",
-
   "dso-selector.set-scope.community.button": "Search all of Mountain Scholar",
   "home.top-level-communities.head": "Communities in Mountain Scholar",
-  "login.form.header": "Please log in to Mountain Scholar",
+  "item.page.referencedBy": "Associated Publications",
+  "item.page.subject": "Subject", 
+  "login.form.header": "Please log in to Mountain Scholar",   
   "login.form.shibboleth": "Log in with your CSU NetID",
   "logout.form.header": "Log out from Mountain Scholar",
+  "menu.section.browse_global": "Browse Mountain Scholar",
+  "repository.title": "Mountain Scholar",
+  "repository.title.prefix": "Mountain Scholar :: ",
   "search.form.scope.all": "All",
-  "submission.sections.upload.info": "Here you will find all the files currently in the item. You can update the file metadata and access conditions or <strong>upload additional files by dragging & dropping them anywhere in the page</strong>",
-  "submission.general.cannot_submit": "Insufficient permissions to submit an item",
-  "deny-request-copy.email.message": "Dear {{ recipientName }},\nIn response to your request I regret to inform you that it's not possible to send you a copy of the file(s) you have requested, concerning the document: \"{{ itemUrl }}\" ({{ itemName }}).\n\nBest regards,\nMountain Scholar Staff <library_digitaladmin@colostate.edu>",
-  "grant-request-copy.email.message": "Dear {{ recipientName }},\nIn response to your request I have the pleasure to send you in attachment a copy of the file(s) concerning the document: \"{{ itemUrl }}\" ({{ itemName }}).\n\nBest regards,\n Mountain Scholar Staff <library_digitaladmin@colostate.edu>",
-  "item.page.subject": "Subject",
-  "item.page.referencedBy": "Associated Publications",
+  "submission.general.cannot_submit": "Insufficient permissions to submit an item",  
+  "title": "Mountain Scholar",
 }
