@@ -14,6 +14,7 @@ import { LoginPageComponent } from './app/login-page/login-page.component';
 import { AdminSidebarComponent } from './app/admin/admin-sidebar/admin-sidebar.component';
 import { UntypedItemComponent } from './app/item-page/simple/item-types/untyped-item/untyped-item.component';
 import { FileSectionComponent } from './app/item-page/simple/field-components/file-section/file-section.component';
+import { FooterComponent } from './app/footer/footer.component';
 
 /**
  * Add components that use a custom decorator to ENTRY_COMPONENTS as well as DECLARATIONS.
@@ -30,6 +31,7 @@ const DECLARATIONS = [
   HeaderComponent,
   LoginPageComponent,
   AdminSidebarComponent,
+  FooterComponent,
 ];
 
 @NgModule({
