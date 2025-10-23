@@ -15,7 +15,7 @@ import { TruncatableComponent } from '../../../../../../../../../app/shared/trun
 import { TruncatablePartComponent } from '../../../../../../../../../app/shared/truncatable/truncatable-part/truncatable-part.component';
 import { ThemedThumbnailComponent } from '../../../../../../../../../app/thumbnail/themed-thumbnail.component';
 
-@listableObjectComponent('PublicationSearchResult', ViewMode.ListElement, Context.Any, 'custom')
+@listableObjectComponent('PublicationSearchResult', ViewMode.ListElement, Context.Any, 'mountainscholar')
 @listableObjectComponent(ItemSearchResult, ViewMode.ListElement, Context.Any, 'custom')
 @Component({
   selector: 'ds-item-search-result-list-element',

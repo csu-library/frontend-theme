@@ -7,6 +7,7 @@ import { HeaderComponent } from './app/header/header.component';
 import { HomeNewsComponent } from './app/home-page/home-news/home-news.component';
 import { UntypedItemComponent } from './app/item-page/simple/item-types/untyped-item/untyped-item.component';
 import { FooterComponent } from './app/footer/footer.component';
+import { ItemSearchResultListElementComponent } from './app/shared/object-list/search-result-list-element/item-search-result/item-types/item/item-search-result-list-element.component';
 
 /**
  * Add components that use a custom decorator to ENTRY_COMPONENTS as well as DECLARATIONS.
@@ -15,6 +16,7 @@ import { FooterComponent } from './app/footer/footer.component';
 const ENTRY_COMPONENTS = [
   UntypedItemComponent,
   FileDownloadLinkComponent,
+  ItemSearchResultListElementComponent,
 ];
 
 const DECLARATIONS = [
