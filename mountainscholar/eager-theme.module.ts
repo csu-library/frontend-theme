@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { RootModule } from '../../app/root.module';
+import { FileDownloadLinkComponent } from './app/shared/file-download-link/file-download-link.component';
 import { HeaderComponent } from './app/header/header.component';
 import { HomeNewsComponent } from './app/home-page/home-news/home-news.component';
 import { UntypedItemComponent } from './app/item-page/simple/item-types/untyped-item/untyped-item.component';
@@ -13,6 +14,7 @@ import { FooterComponent } from './app/footer/footer.component';
  */
 const ENTRY_COMPONENTS = [
   UntypedItemComponent,
+  FileDownloadLinkComponent,
 ];
 
 const DECLARATIONS = [

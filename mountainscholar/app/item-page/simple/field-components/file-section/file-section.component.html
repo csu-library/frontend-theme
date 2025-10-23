@@ -2,10 +2,10 @@
   @if (bitstreams?.length > 0) {
     <ds-metadata-field-wrapper [label]="label | translate">
       <div class="file-section">
-        <ul>
+	<ul>
         @for (file of bitstreams; track file; let last = $last) {
-          <li>
-            <ds-file-download-link [bitstream]="file" [item]="item">
+	  <li>
+            <ds-file-download-link [bitstream]="file" [item]="item" [cssClasses]="'no-block'">
               <span>
                 @if (primaryBitstreamId === file.id) {
                   <span class="badge bg-primary">{{ 'item.page.bitstreams.primary' | translate }}</span>
@@ -20,9 +20,9 @@
                 <span innerHTML="{{separator}}"></span>
               }
             </ds-file-download-link>
-          </li>
+	  </li>
         }
-        </ul>
+	</ul>
         @if (isLoading) {
           <ds-loading message="{{'loading.default' | translate}}" [showMessage]="false"></ds-loading>
         }

@@ -68,6 +68,10 @@
       [label]="'item.page.subject' | translate">
     </ds-metadata-representation-list>
     <ds-generic-item-page-field [item]="object"
+      [fields]="['dcterms.embargo.terms']"
+      [label]="'Embargo Terms'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
       [fields]="['dc.identifier.citation']"
       [label]="'item.page.citation'">
     </ds-generic-item-page-field>
