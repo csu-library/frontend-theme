@@ -31,6 +31,11 @@
       </div>
     }
     <ds-item-page-file-section [item]="object"></ds-item-page-file-section>
+    @if ((object?.owningCollection | async)?.payload?.uuid === 'c48240d6-4d02-442e-847d-c4bb09f0c9af') {
+      <div class='mb-3' >
+        <a href="https://lib.colostate.edu/find/csu-digital-repository/policies-guidelines-forms/research-data-terms-of-use/" class="fs-4">Research Data Terms of Use</a>
+      </div>
+    }
     <ds-item-page-date-field [item]="object"></ds-item-page-date-field>
     <ds-metadata-representation-list class="ds-item-page-mixed-author-field"
       [parentItem]="object"
