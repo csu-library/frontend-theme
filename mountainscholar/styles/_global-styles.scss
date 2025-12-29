@@ -2,3 +2,11 @@
 
 // imports the base global style
 @import '../../../styles/_global-styles.scss';
+
+// This rule fixes the bitstream download links to work within a list
+// and with the new access badges. If there isn't an access badge
+// the anchor link gets made inline so it goes on the first line of
+// the parent LI.
+li:not(:has(.access-status-list-element-badge)) a.d-block.no-block {
+  display: inline !important;
+}

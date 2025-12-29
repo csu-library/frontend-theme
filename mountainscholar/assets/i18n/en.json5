@@ -5,7 +5,7 @@
   "deny-request-copy.intro": "An email with the canned rejection text will be sent to the requestor.",
   "deny-request-copy.email.subject": "Request for Copy of Restricted Document is Denied",
   "deny-request-copy.email.message": "",
-  "grant-deny-request-copy.email.subject": "Subject (cannot be edited):",
+  "grant-deny-request-copy.email.subject": "Subject:",
   "grant-deny-request-copy.intro1": "If you are an author or administrator of the document <a href='{{ url }}'>{{ name }}</a>, then please use one of the options below to respond to the user's request.", 
   "grant-deny-request-copy.intro2": "After choosing an option, you will have a chance to add an optional message of your own to accompany the canned email text.",
   "grant-deny-request-copy.email.message": "Optional message to accompany the canned text.  Email signature will be added automatically.",
@@ -23,4 +23,7 @@
   "search.form.scope.all": "All",
   "submission.general.cannot_submit": "Insufficient permissions to submit an item",  
   "title": "Mountain Scholar",
+  "browse.metadata.alttitle": "Alternative Title",
+  "browse.metadata.alttitle.breadcrumbs": "Browse by Alternative Title",
+  "menu.section.browse_global_by_alttitle": "By Alternative Title",
 }

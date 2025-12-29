@@ -1,20 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule } from '../../app/shared/shared.module';
+
 import { RootModule } from '../../app/root.module';
-import { NavbarModule } from '../../app/navbar/navbar.module';
-import { ItemPageModule } from '../../app/item-page/item-page.module';
-import { ItemSharedModule } from '../../app/item-page/item-shared.module';
-import { SharedBrowseByModule } from '../../app/shared/browse-by/shared-browse-by.module';
-import { ResultsBackButtonModule } from '../../app/shared/results-back-button/results-back-button.module';
-import { DsoPageModule } from '../../app/shared/dso-page/dso-page.module';
+import { FileDownloadLinkComponent } from './app/shared/file-download-link/file-download-link.component';
 import { HeaderComponent } from './app/header/header.component';
 import { HomeNewsComponent } from './app/home-page/home-news/home-news.component';
-import { LoginPageComponent } from './app/login-page/login-page.component';
-import { AdminSidebarComponent } from './app/admin/admin-sidebar/admin-sidebar.component';
 import { UntypedItemComponent } from './app/item-page/simple/item-types/untyped-item/untyped-item.component';
-import { FileSectionComponent } from './app/item-page/simple/field-components/file-section/file-section.component';
 import { FooterComponent } from './app/footer/footer.component';
+import { ItemSearchResultListElementComponent } from './app/shared/object-list/search-result-list-element/item-search-result/item-types/item/item-search-result-list-element.component';
 
 /**
  * Add components that use a custom decorator to ENTRY_COMPONENTS as well as DECLARATIONS.
@@ -22,31 +15,23 @@ import { FooterComponent } from './app/footer/footer.component';
  */
 const ENTRY_COMPONENTS = [
   UntypedItemComponent,
-  FileSectionComponent,
+  FileDownloadLinkComponent,
+  ItemSearchResultListElementComponent,
 ];
 
 const DECLARATIONS = [
   ...ENTRY_COMPONENTS,
   HomeNewsComponent,
   HeaderComponent,
-  LoginPageComponent,
-  AdminSidebarComponent,
   FooterComponent,
 ];
 
 @NgModule({
   imports: [
     CommonModule,
-    SharedModule,
     RootModule,
-    NavbarModule,
-    SharedBrowseByModule,
-    ResultsBackButtonModule,
-    ItemPageModule,
-    ItemSharedModule,
-    DsoPageModule,
+    ...DECLARATIONS
   ],
-  declarations: DECLARATIONS,
   providers: [
     ...ENTRY_COMPONENTS.map((component) => ({provide: component}))
   ],
