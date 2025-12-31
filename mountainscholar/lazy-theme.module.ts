@@ -18,12 +18,14 @@ import { RouterModule } from '@angular/router';
 import { RootModule } from '../../app/root.module';
 import { AdminSidebarComponent } from './app/admin/admin-sidebar/admin-sidebar.component';
 import { LoginPageComponent } from './app/login-page/login-page.component';
+import { EmailRequestCopyComponent } from './app/request-copy/email-request-copy/email-request-copy.component';
 
 
 const DECLARATIONS = [
   FileSectionComponent,
   AdminSidebarComponent,
   LoginPageComponent,
+  EmailRequestCopyComponent,
 ];
 
 @NgModule({
