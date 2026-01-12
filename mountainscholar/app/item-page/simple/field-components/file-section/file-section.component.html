@@ -14,7 +14,7 @@
               </span>
               <span> ({{(file?.sizeBytes) | dsFileSize }})</span>
               @if (file?.hasMetadata('dc.description')) {
-                <span>{{ file.firstMetadataValue('dc.description') }}</span>
+                <span> {{ file.firstMetadataValue('dc.description') }}</span>
               }
               @if (!last) {
                 <span innerHTML="{{separator}}"></span>
