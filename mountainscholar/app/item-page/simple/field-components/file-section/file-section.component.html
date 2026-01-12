@@ -13,7 +13,7 @@
                 {{ dsoNameService.getName(file) }}
               </span>
               <span> ({{(file?.sizeBytes) | dsFileSize }})</span>
-              @if (file?.hasMetadata('dc.dscription')) {
+              @if (file?.hasMetadata('dc.description')) {
                 <span>{{ file.firstMetadataValue('dc.description') }}</span>
               }
               @if (!last) {
