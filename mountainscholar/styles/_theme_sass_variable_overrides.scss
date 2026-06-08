@@ -27,4 +27,6 @@
 // ) !default;
 //
 // $link-color: map-get($theme-colors, info) !default;
+@import '../../../styles/_variables.scss';
+
 $link-decoration: underline;
